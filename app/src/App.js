@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import MainPageSection1 from "./components/MainPageSection1/MainPageSection1";
 
+
 function App() {
   return (
     <div className="App wrapper">
