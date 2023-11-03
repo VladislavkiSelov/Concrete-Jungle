@@ -13,7 +13,6 @@ export default function Calculator() {
   const [price, setPrice] = useState(0);
   const [valueSlider, setValueSlider] = useState(30);
   const validatePhone = /^\+380\d{3}\d{2}\d{2}\d{2}$/;
-
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
   const onSubmitForm = data => {
