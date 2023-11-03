@@ -26,6 +26,11 @@
 
   .section1 {
     display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .section1_left {
     h2 {
       font-size: 44px;
       font-weight: 700;
@@ -48,6 +53,13 @@
         font-size: 18px;
         font-weight: 700;
       }
+    }
+  }
+
+  @media (max-width: 850px) {
+    .section1 {
+     flex-direction: column;
+     max-width: 660px;
     }
   }
 }

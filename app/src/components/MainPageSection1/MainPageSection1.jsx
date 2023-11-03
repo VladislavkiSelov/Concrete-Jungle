@@ -5,7 +5,7 @@ import "./MainPageSection1.scss";
 export default function MainPageSection1() {
   return <section className="section1_wrapper">
       <div className="section1 container">
-        <div>
+        <div className="section1_left">
           <h1>
             ремонт квартир<br /> в Харкові
           </h1>
