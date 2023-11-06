@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-      padding-bottom: 25px;
+    padding-bottom: 25px;
   }
 
   .box_burger {
@@ -133,6 +133,11 @@
   @media (max-width: 840px) {
     .location {
       display: none;
+    }
+    .header_bottom {
+      a {
+        font-size: 14px;
+      }
     }
   }
 

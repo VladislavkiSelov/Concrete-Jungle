@@ -56,10 +56,24 @@
     }
   }
 
-  @media (max-width: 850px) {
+  @media (max-width: 840px) {
+    h1 {
+      font-size: 52px;
+    }
     .section1 {
-     flex-direction: column;
-     max-width: 660px;
+      flex-direction: column;
+      max-width: 660px;
+    }
+    .section1_left {
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+
+    @media (max-width: 640px) {
+    h1 {
+      font-size: 34px;
     }
   }
 }
