@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import CardTypeRepaire from "../CardtypeRepaire/CardTypeRepaire";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./SectionRepairPrices.scss";
 
 export default function SectionRepairPrices() {
   const redecorating = {
@@ -54,7 +55,7 @@ export default function SectionRepairPrices() {
     ]
   };
   return (
-    <Slider {...settings}>
+    <Slider className="container" {...settings}>
       <CardTypeRepaire objJob={redecorating} />
       <CardTypeRepaire objJob={majorRepair} />
       <CardTypeRepaire objJob={turnkeyRenovation} />
