@@ -54,12 +54,12 @@ export default function SectionRepairPrices() {
       { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }
     ]
   };
-  return (
-    <Slider className="container" {...settings}>
-      <CardTypeRepaire objJob={redecorating} />
-      <CardTypeRepaire objJob={majorRepair} />
-      <CardTypeRepaire objJob={turnkeyRenovation} />
-      <CardTypeRepaire objJob={designerRenovation} />
-    </Slider>
-  );
+  return <section className="section_repair_prices">
+      <Slider className="container" {...settings}>
+        <CardTypeRepaire objJob={redecorating} />
+        <CardTypeRepaire objJob={majorRepair} />
+        <CardTypeRepaire objJob={turnkeyRenovation} />
+        <CardTypeRepaire objJob={designerRenovation} />
+      </Slider>
+    </section>;
 }
