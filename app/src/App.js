@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import MainPageSection1 from "./components/MainPageSection1/MainPageSection1";
 import SectionRepairPrices from "./components/SectionRepairPrices/SectionRepairPrices";
 import HowWeWork from "./components/HowWeWork/HowWeWork";
+import YoutubeChannel from "./components/YoutubeChannel/YoutubeChannel";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <MainPageSection1 />
         <SectionRepairPrices />
         <HowWeWork />
+        <YoutubeChannel/>
       </div>
       <Footer />
     </div>
