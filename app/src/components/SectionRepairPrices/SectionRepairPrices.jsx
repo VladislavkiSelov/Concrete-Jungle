@@ -6,27 +6,49 @@ import "slick-carousel/slick/slick-theme.css";
 import "./SectionRepairPrices.scss";
 
 export default function SectionRepairPrices() {
+  const type = {
+    typeCosmetic:
+      "Такий тип ремонту підійде для того, щоб «освіжити» ремонт у квартирі: замінити покриття стін, підлоги та стелі без попередньої підготовки",
+    typeCapital:
+      "Такий тип ремонту підійде, якщо потрібно відремонтувати квартиру: вирівняти стіни, зробити стяжку підлоги, прокласти інженерію і виконати чистове оздоблення.",
+    typeCompleteСonstruction:
+      "Ремонт класу «євро» - капітальний ремонт із застосуванням сучасних оздоблювальних матеріалів та стандартів, що включає перепланування.",
+    typeDesigner:
+      "Дизайнерський ремонт орієнтований для справжніх цінителів комфорту, естетики та внутрішньої зручності."
+  };
   const redecorating = {
-    Демонтаж: ["Демонтаж старых покрытий", "Демонтаж старой электрики"],
-    "Черновые работы": ["Грунтовка стен и пола", "Шпатлевка и штукатурка стен"],
+    Демонтаж: ["Демонтаж старих покриттів", "Демонтаж старої електрики"],
+    "Черновые работы": [
+      "Грунтовка стін та підлоги",
+      "Шпаклівка та штукатурка стін"
+    ],
     "Чистовые работы": ["Lorem ipsum dolor", "Lorem ipsum dolor"]
   };
 
   const majorRepair = {
-    Демонтаж: ["Демонтаж старых покрытий", "Демонтаж старой электрики"],
-    "Черновые работы": ["Грунтовка стен и пола", "Шпатлевка и штукатурка стен"],
+    Демонтаж: ["Демонтаж старих покриттів", "Демонтаж старої електрики"],
+    "Черновые работы": [
+      "Грунтовка стін та підлоги",
+      "Шпаклівка та штукатурка стін"
+    ],
     "Чистовые работы": ["Lorem ipsum dolor", "Lorem ipsum dolor"]
   };
 
   const turnkeyRenovation = {
-    Демонтаж: ["Демонтаж старых покрытий", "Демонтаж старой электрики"],
-    "Черновые работы": ["Грунтовка стен и пола", "Шпатлевка и штукатурка стен"],
+    Демонтаж: ["Демонтаж старих покриттів", "Демонтаж старої електрики"],
+    "Черновые работы": [
+      "Грунтовка стін та підлоги",
+      "Шпаклівка та штукатурка стін"
+    ],
     "Чистовые работы": ["Lorem ipsum dolor", "Lorem ipsum dolor"]
   };
 
   const designerRenovation = {
-    Демонтаж: ["Демонтаж старых покрытий", "Демонтаж старой электрики"],
-    "Черновые работы": ["Грунтовка стен и пола", "Шпатлевка и штукатурка стен"],
+    Демонтаж: ["Демонтаж старих покриттів", "Демонтаж старої електрики"],
+    "Черновые работы": [
+      "Грунтовка стін та підлоги",
+      "Шпаклівка та штукатурка стін"
+    ],
     "Чистовые работы": ["Lorem ipsum dolor", "Lorem ipsum dolor"]
   };
 
@@ -54,12 +76,34 @@ export default function SectionRepairPrices() {
       { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }
     ]
   };
-  return <section className="section_repair_prices">
+  return (
+    <section className="section_repair_prices">
       <Slider className="container" {...settings}>
-        <CardTypeRepaire objJob={redecorating} />
-        <CardTypeRepaire objJob={majorRepair} />
-        <CardTypeRepaire objJob={turnkeyRenovation} />
-        <CardTypeRepaire objJob={designerRenovation} />
+        <CardTypeRepaire
+          name="Косметичний"
+          day="5"
+          type={type.typeCosmetic}
+          objJob={redecorating}
+        />
+        <CardTypeRepaire
+          name="Капітальний"
+          day="14"
+          type={type.typeCapital}
+          objJob={majorRepair}
+        />
+        <CardTypeRepaire
+          name="Під ключ"
+          day="30"
+          type={type.typeCompleteСonstruction}
+          objJob={turnkeyRenovation}
+        />
+        <CardTypeRepaire
+          name="Дизайнерський"
+          day="45"
+          type={type.typeDesigner}
+          objJob={designerRenovation}
+        />
       </Slider>
-    </section>;
+    </section>
+  );
 }

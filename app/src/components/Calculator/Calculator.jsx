@@ -223,7 +223,7 @@ export default function Calculator() {
           </div>
         </div>
         <div className="call">
-          <h2>Введите номер телефона</h2>
+          <h2>Введіть номер телефону</h2>
           <div>
             <IMaskInput
               mask="+{38}(000)-00-00-000"

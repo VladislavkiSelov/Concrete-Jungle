@@ -3,22 +3,25 @@ import "./HowWeWork.scss";
 
 export default function HowWeWork() {
   const howWeWorkArray = [
-    { name: "Бесплатный выезд замерщика", img: "/img/builder_1.png" },
-    { name: "Смета в день обращения", img: "/img/consent_1.png" },
-    { name: "Договор", img: "/img/official-documents_1.png" },
-    { name: "Накладные материалы", img: "/img/gdpr_1.png" },
-    { name: "Контроль: фотоотчёт или видеонаблюдение", img: "/img/cctv_1.png" },
-    { name: "Акт выполненных работ", img: "/img/contract_1.png" },
-    { name: "Акт приемки работ по договору", img: "/img/cooperation_1.png" },
-    { name: "Гарантия на выполненные работы", img: "/img/guarantee_1.png" }
+    { name: "Безкоштовний виїзд замірника", img: "/img/builder_1.png" },
+    { name: "Кошторис у день звернення", img: "/img/consent_1.png" },
+    { name: "Договір", img: "/img/official-documents_1.png" },
+    { name: "Накладні матеріали", img: "/img/gdpr_1.png" },
+    {
+      name: "Контроль: фотозвіт чи відеоспостереження",
+      img: "/img/cctv_1.png"
+    },
+    { name: "Акт виконаних робіт", img: "/img/contract_1.png" },
+    { name: "Акт приймання робіт за договором", img: "/img/cooperation_1.png" },
+    { name: "Гарантія на виконані роботи", img: "/img/guarantee_1.png" }
   ];
 
   return (
     <section className="HowWeWork container">
-      <h2>Как мы работаем</h2>
+      <h2>Як ми працюємо</h2>
       <p>
-        Вам понятен каждый этап: фиксированные сроки и цены, предоставляем все
-        документы: накладные, гарантии, акты. Вы будете уверены в результате.
+        Вам зрозумілий кожен етап: фіксовані терміни та ціни, надаємо все
+        Документи: накладні, гарантії, акти. Ви будете впевнені у результаті.
       </p>
       <div className="box_card_work">
         {howWeWorkArray.map(el =>
