@@ -8,6 +8,7 @@ import SectionRepairPrices from "./components/SectionRepairPrices/SectionRepairP
 import HowWeWork from "./components/HowWeWork/HowWeWork";
 import YoutubeChannel from "./components/YoutubeChannel/YoutubeChannel";
 import OurWorks from "./components/OurWorks/OurWorks";
+import AboutUs from "./components/AboutUs/AboutUs";
 
 function App() {
   return <div className="App wrapper">
@@ -16,8 +17,9 @@ function App() {
         <MainPageSection1 />
         <SectionRepairPrices />
         <HowWeWork />
-        <YoutubeChannel />
         <OurWorks />
+        <AboutUs />
+        <YoutubeChannel />
       </div>
       <Footer />
     </div>;
