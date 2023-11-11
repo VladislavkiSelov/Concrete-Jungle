@@ -107,6 +107,10 @@
       cursor: pointer;
       position: relative;
 
+      a {
+        text-transform: uppercase;
+      }
+
       &::before {
         content: '';
         position: absolute;

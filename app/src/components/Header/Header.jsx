@@ -93,7 +93,7 @@ export default function Header() {
               <a>ЗАМІР</a>
             </li>
             <li>
-              <a>КОМАНДА</a>
+              <a>про нас</a>
             </li>
             <li>
               <a>ЦІНА</a>
