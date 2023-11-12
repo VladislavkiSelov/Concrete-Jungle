@@ -77,7 +77,7 @@ export default function SectionRepairPrices() {
     ]
   };
   return (
-    <section className="section_repair_prices">
+    <section className="section_repair_prices" id="price">
       <Slider className="container" {...settings}>
         <CardTypeRepaire
           name="Косметичний"

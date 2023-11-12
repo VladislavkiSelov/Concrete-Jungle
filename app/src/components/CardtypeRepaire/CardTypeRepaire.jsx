@@ -3,7 +3,6 @@ import { Button } from "../Button/Button";
 import "./CardTypeRepaire.scss";
 
 export default function CardTypeRepaire({ objJob, name, day, type }) {
-  console.log(objJob.Демонтаж);
   return <div className="card_repaire">
       <div className="wrapper_card_header">
         <div className="card_header_repaire conteiner_card_repaire">

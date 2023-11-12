@@ -3,7 +3,7 @@ import Calculator from "../Calculator/Calculator"
 import "./MainPageSection1.scss";
 
 export default function MainPageSection1() {
-  return <section className="section1_wrapper">
+  return <section className="section1_wrapper" id="calculator">
       <div className="section1 container">
         <div className="section1_left">
           <h1>
@@ -30,8 +30,8 @@ export default function MainPageSection1() {
               <p>Гарантія 3 роки</p>
             </div>
           </div>
-      </div>
-      <Calculator/>
+        </div>
+        <Calculator />
       </div>
     </section>;
 }

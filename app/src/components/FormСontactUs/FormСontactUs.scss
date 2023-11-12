@@ -11,12 +11,17 @@
     margin-bottom: 15px;
   }
 
-  input {
+  input,
+  textarea {
     margin-top: 10px;
     padding: 20px;
     font-size: 18px;
     font-weight: 500;
     border-radius: 7px;
-border: 1px solid #626262;
+    border: 1px solid #626262;
+  }
+
+  .error {
+    border: solid red 1px;
   }
 }

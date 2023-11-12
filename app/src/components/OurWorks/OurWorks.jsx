@@ -6,22 +6,14 @@ import "./OurWorks.scss";
 import "lightbox.js-react/dist/index.css";
 
 export default function OurWorks() {
-  return (
-    <section className="OurWorks container">
+  return <section className="OurWorks container" id="our_works">
       <h2>Наші роботи</h2>
       <h3>
         Ми готові реалізувати будь-які Ваші задумки. Нас не лякають складні
         проекти!
       </h3>
       <div className="box_gallery">
-        <LightGallery
-          addClass="box_slider"
-          allowMediaOverlap={true}
-          closeOnTap={true}
-          download={false}
-          getCaptionFromTitleOrAlt={false}
-          speed={500}
-        >
+        <LightGallery addClass="box_slider" allowMediaOverlap={true} closeOnTap={true} download={false} getCaptionFromTitleOrAlt={false} speed={500}>
           <a href="/img/gallery/img1.jpg">
             <img alt="img1" src="/img/gallery/img1.jpg" />
           </a>
@@ -51,6 +43,5 @@ export default function OurWorks() {
           </a>
         </LightGallery>
       </div>
-    </section>
-  );
+    </section>;
 }

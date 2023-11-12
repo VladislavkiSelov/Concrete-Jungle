@@ -4,7 +4,7 @@ import { IMaskInput } from "react-imask";
 import { Button } from "../Button/Button";
 import "./FormСontactUs.scss";
 
-export default function FormСontactUs() {
+export default function FormСontactUs({statusComment}) {
   const inputRef = useRef(null);
   const [phoneNumber, setPhoneNumber] = useState("");
   const [isInputValid, setInputValid] = useState(false);
@@ -49,9 +49,15 @@ export default function FormСontactUs() {
           value={phoneNumber}
           onAccept={handleAccept}
           onComplete={handleEmpty}
+          className={errors?.comment && 'error'}
+          {...register("phone", { required: true})}
           placeholder="+(38)(000)-00-00-000"
         />
-          </label>
+      </label>
+       {statusComment && <label className='box_input'>
+        Ваш коментар
+        <textarea  type="textarea" className={errors?.comment && 'error'} {...register("comment", { required: true})} placeholder='.....' />
+          </label>}
           <Button buttonClass='btn_form' text='Отправить сообщение Владиславу'/>
     </form>
   );

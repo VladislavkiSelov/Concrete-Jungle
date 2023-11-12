@@ -9,10 +9,18 @@ import HowWeWork from "./components/HowWeWork/HowWeWork";
 import YoutubeChannel from "./components/YoutubeChannel/YoutubeChannel";
 import OurWorks from "./components/OurWorks/OurWorks";
 import AboutUs from "./components/AboutUs/AboutUs";
+import ModalMeasuare from "./components/ModalMeasuare/ModalMeasuare";
+import { useState } from "react";
 
 function App() {
+  const [activeMeasuare, setActiveMeasure] = useState(false);
+
+  function setModalMeasure(value) {
+    setActiveMeasure(value);
+  }
+
   return <div className="App wrapper">
-      <Header />
+      <Header activeMeasuare={activeMeasuare} setModalMeasure={value => setModalMeasure(value)} />
       <div className="Main">
         <MainPageSection1 />
         <SectionRepairPrices />
@@ -20,6 +28,7 @@ function App() {
         <OurWorks />
         <AboutUs />
         <YoutubeChannel />
+        {activeMeasuare && <ModalMeasuare setModalMeasure={value => setModalMeasure(value)} />}
       </div>
       <Footer />
     </div>;
