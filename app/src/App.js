@@ -11,9 +11,18 @@ import OurWorks from "./components/OurWorks/OurWorks";
 import AboutUs from "./components/AboutUs/AboutUs";
 import ModalMeasuare from "./components/ModalMeasuare/ModalMeasuare";
 import { useState } from "react";
+import { useEffect } from "react";
 
 function App() {
   const [activeMeasuare, setActiveMeasure] = useState(false);
+
+  useEffect(() => {
+    const imgArray = Array.from(document.querySelectorAll("img"));
+    imgArray.forEach(element => {
+      element.setAttribute("src", `https://vladislavkiselov.github.io/Concrete-Jungle${element.getAttribute("src")}`);
+      // element.getAttribute('src')
+    });
+  },[])
 
   function setModalMeasure(value) {
     setActiveMeasure(value);
