@@ -1,31 +1,38 @@
 .HowWeWork {
+  width: 100vw;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
 
   & > h2 {
+     position: relative;
     color: #171616;
     font-size: 42px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 10px;
-    transform: translateX(-300%);
+    transform: translateX(50%);
+     color: opacity(0);
     transition: 1s;
   }
 
   & > p {
+     position: relative;
     max-width: 730px;
     color: #171616;
     text-align: center;
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 70px;
-    transform: translateX(300%);
+    transform: translateX(-50%);
+    color: opacity(0);
     transition: 1s;
   }
 
   .active_scroll {
+    color: opacity(1);
     transform: translateX(0%);
   }
 
