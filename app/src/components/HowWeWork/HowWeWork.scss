@@ -10,6 +10,8 @@
     font-weight: 700;
     text-align: center;
     margin-bottom: 10px;
+    transform: translateX(-300%);
+    transition: 1s;
   }
 
   & > p {
@@ -19,6 +21,12 @@
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 70px;
+    transform: translateX(300%);
+    transition: 1s;
+  }
+
+  .active_scroll {
+    transform: translateX(0%);
   }
 
   @media (max-width: 460px) {

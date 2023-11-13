@@ -7,8 +7,8 @@ import "lightbox.js-react/dist/index.css";
 
 export default function OurWorks() {
   return <section className="OurWorks container" id="our_works">
-      <h2>Наші роботи</h2>
-      <h3>
+      <h2 className="anim_item">Наші роботи</h2>
+      <h3 className="anim_item">
         Ми готові реалізувати будь-які Ваші задумки. Нас не лякають складні
         проекти!
       </h3>

@@ -14,7 +14,7 @@ export default function AboutUs() {
           </p>
           <FormСontactUs statusComment={false} />
         </div>
-        <div className="AboutUs_right">
+        <div className="AboutUs_right anim_item">
           <img src="/img/image_man.svg" alt="" />
         </div>
       </div>

@@ -6,7 +6,7 @@ export default function MainPageSection1() {
   return <section className="section1_wrapper" id="calculator">
       <div className="section1 container">
         <div className="section1_left">
-          <h1>
+          <h1 className="anim_item">
             ремонт квартир<br /> в Харкові
           </h1>
           <h2>

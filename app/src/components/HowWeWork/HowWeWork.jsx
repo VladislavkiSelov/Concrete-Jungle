@@ -16,16 +16,14 @@ export default function HowWeWork() {
     { name: "Гарантія на виконані роботи", img: "/img/guarantee_1.png" }
   ];
 
-  return (
-    <section className="HowWeWork container">
-      <h2>Як ми працюємо</h2>
-      <p>
+  return <section className="HowWeWork container">
+      <h2 className="anim_item">Як ми працюємо</h2>
+      <p className="anim_item">
         Вам зрозумілий кожен етап: фіксовані терміни та ціни, надаємо все
         Документи: накладні, гарантії, акти. Ви будете впевнені у результаті.
       </p>
       <div className="box_card_work">
-        {howWeWorkArray.map(el =>
-          <div className="card_work">
+        {howWeWorkArray.map(el => <div className="card_work">
             <div>
               <div className="box_img">
                 <img src={el.img} alt="#" />
@@ -38,9 +36,7 @@ export default function HowWeWork() {
               <div className="line" />
               <div className="circle" />
             </div>
-          </div>
-        )}
+          </div>)}
       </div>
-    </section>
-  );
+    </section>;
 }
