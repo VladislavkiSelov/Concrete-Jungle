@@ -9,7 +9,7 @@ export default function MainPageSection1() {
           <h1 className="anim_item">
             ремонт квартир<br /> в Харкові
           </h1>
-          <h2>
+          <h2 className="anim_item">
             от <span className="green">2450</span> грн/м2
           </h2>
           <div className="box_icon_section1">

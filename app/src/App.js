@@ -16,10 +16,12 @@ import { useEffect } from "react";
 function App() {
   const [activeMeasuare, setActiveMeasure] = useState(false);
 
-  window.addEventListener("scroll", animalScroll);
-  function animalScroll() {
+  useEffect(() => {
     const animItems = Array.from(document.querySelectorAll(".anim_item"));
-    if (animItems.length > 0) {
+
+    window.addEventListener("scroll", animalScroll);
+
+    function animalScroll() {
       animItems.forEach(element => {
         const animItemHeight = element.offsetHeight;
         const animItemOffset = offset(element).top;
@@ -47,11 +49,13 @@ function App() {
         scrollTop = window.scrollY || document.documentElement.scrollTop;
       return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
     }
-  }
 
-  window.onbeforeunload = function() {
-    window.scrollTo({ left: 0, top: 0 });
-  };
+    animalScroll();
+
+    window.onbeforeunload = function() {
+      window.scrollTo({ left: 0, top: 0 });
+    };
+  }, []);
 
   useEffect(() => {
     const imgArray = Array.from(document.querySelectorAll("img"));

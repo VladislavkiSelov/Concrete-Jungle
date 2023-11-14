@@ -15,16 +15,13 @@ img {
   max-width: 100%;
 }
 
-html{
-      overflow-x: hidden;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.2;
   background: #f8f8f8;
+  overflow-x: hidden;
 }
 
 .wrapper {
