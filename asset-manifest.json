@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Concrete-Jungle/static/css/main.86748836.css",
-    "main.js": "/Concrete-Jungle/static/js/main.ccd63762.js",
+    "main.css": "/Concrete-Jungle/static/css/main.90992a9e.css",
+    "main.js": "/Concrete-Jungle/static/js/main.c44a01d5.js",
     "static/media/section1(3).png": "/Concrete-Jungle/static/media/section1(3).3949bab20e62225ef4b0.png",
     "static/media/lg.svg?io9a6k": "/Concrete-Jungle/static/media/lg.09cd8e9be7081f216644.svg",
     "static/media/lg.woff?io9a6k": "/Concrete-Jungle/static/media/lg.356a0e9cb064c7a196c6.woff",
@@ -12,11 +12,11 @@
     "static/media/slick.ttf": "/Concrete-Jungle/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Concrete-Jungle/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Concrete-Jungle/index.html",
-    "main.86748836.css.map": "/Concrete-Jungle/static/css/main.86748836.css.map",
-    "main.ccd63762.js.map": "/Concrete-Jungle/static/js/main.ccd63762.js.map"
+    "main.90992a9e.css.map": "/Concrete-Jungle/static/css/main.90992a9e.css.map",
+    "main.c44a01d5.js.map": "/Concrete-Jungle/static/js/main.c44a01d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.86748836.css",
-    "static/js/main.ccd63762.js"
+    "static/css/main.90992a9e.css",
+    "static/js/main.c44a01d5.js"
   ]
 }
