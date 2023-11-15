@@ -10,9 +10,9 @@ import YoutubeChannel from "./components/YoutubeChannel/YoutubeChannel";
 import OurWorks from "./components/OurWorks/OurWorks";
 import AboutUs from "./components/AboutUs/AboutUs";
 import ModalMeasuare from "./components/ModalMeasuare/ModalMeasuare";
-import { useState } from "react";
-import { useEffect } from "react";
-
+import React, { useState, useEffect } from "react";
+import {Context} from './components/Context/context'
+  
 function App() {
   const [activeMeasuare, setActiveMeasure] = useState(false);
 
@@ -73,25 +73,21 @@ function App() {
     setActiveMeasure(value);
   }
 
-  return (
-    <div className="App wrapper">
-      <Header
-        activeMeasuare={activeMeasuare}
-        setModalMeasure={value => setModalMeasure(value)}
-      />
-      <div className="Main">
-        <MainPageSection1 />
-        <SectionRepairPrices />
-        <HowWeWork />
-        <OurWorks />
-        <AboutUs />
-        <YoutubeChannel />
-        {activeMeasuare &&
-          <ModalMeasuare setModalMeasure={value => setModalMeasure(value)} />}
+  return <Context.Provider value={{ setModalMeasure }}>
+      <div className="App wrapper">
+        <Header activeMeasuare={activeMeasuare} setModalMeasure={value => setModalMeasure(value)} />
+        <div className="Main">
+          <MainPageSection1 />
+          <SectionRepairPrices />
+          <HowWeWork />
+          <OurWorks />
+          <AboutUs />
+          <YoutubeChannel />
+          {activeMeasuare && <ModalMeasuare setModalMeasure={value => setModalMeasure(value)} />}
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
-  );
+    </Context.Provider>;
 }
 
 export default App;
