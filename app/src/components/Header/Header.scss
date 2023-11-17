@@ -98,7 +98,7 @@
       justify-content: space-between;
     }
 
-    a {
+    a,h6 {
       font-weight: 800;
       transition: 0.7s;
       color: black;
@@ -129,7 +129,7 @@
           width: 100%;
         }
 
-        a {
+        a,h6 {
           color: rgba(108, 172, 61, 1);
         }
       }
